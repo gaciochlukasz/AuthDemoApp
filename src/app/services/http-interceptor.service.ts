@@ -6,21 +6,28 @@ import {
   HttpRequest,
 } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { finalize } from 'rxjs/operators';
+import { HelperService } from 'src/app/services/helper.service';
 
 @Injectable()
 export class HttpInterceptorService implements HttpInterceptor {
 
-  constructor() {}
+  constructor(private helperService: HelperService) {}
 
   intercept(
     req: HttpRequest<any>,
     next: HttpHandler
   ): Observable<HttpEvent<any>> {
-    let headers = req.headers.append('Authorization', `Bearer xxx`);
-    headers = headers.append('RefreshToken', 'token');
-    const reqcopy = req.clone({
+    this.helperService.setLoader(true);
+    let headers = req.headers.append('Authorization', `Bearer token`);
+    const reqCopy = req.clone({
       headers,
+      url: `http://localhost:3000/${req.url}`
     });
-    return next.handle(reqcopy);
+    return next.handle(reqCopy).pipe(
+      finalize(() => {
+        this.helperService.setLoader(false);
+      })
+    );
   }
 }

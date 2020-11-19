@@ -1,0 +1,4 @@
+{
+    "users": 600,
+    "/users/:email": "/users?email=:email"
+}

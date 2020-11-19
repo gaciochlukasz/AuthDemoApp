@@ -1,0 +1,35 @@
+<h1>Sign-In</h1>
+<form [formGroup]="form">
+  <mat-form-field class="welcome-page_welcome-panel_input">
+    <mat-label>Email</mat-label>
+    <input type="text" matInput formControlName="email" />
+    <mat-error *ngIf="form.get('email').hasError('required')">
+      Email is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="welcome-page_welcome-panel_input">
+    <mat-label>Password</mat-label>
+    <input type="password" matInput formControlName="password" />
+    <mat-error *ngIf="form.get('password').hasError('required')">
+      Password is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+
+  <button
+    class="welcome-page_welcome-panel_button"
+    mat-raised-button
+    color="primary"
+    (click)="login()"
+  >
+    Log In
+  </button>
+
+  <button
+    class="welcome-page_welcome-panel_button"
+    mat-raised-button
+    (click)="register()"
+  >
+    Register
+  </button>
+</form>

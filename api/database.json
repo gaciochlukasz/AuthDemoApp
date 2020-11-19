@@ -1,0 +1,116 @@
+{
+  "users": [
+    {
+      "email": "sdfgsdf@afasd.pl",
+      "password": "$2a$10$uqJNySQ.oXU7ynqkwpqQyuObHh9ilbwgbLvw0lOOJDnmd7Sa19HeK",
+      "firstName": "sdsgdfg",
+      "lastName": "sdfgs",
+      "nick": "sdfgd",
+      "id": 1
+    },
+    {
+      "email": "sdfgsdf@asdfga.pl",
+      "password": "$2a$10$T/D2x55WFbnrnn4Dj9ZKFuHAWsZADDPPdiKnK9DgSfjUeQJ/ZmrhO",
+      "firstName": "fghdfghd",
+      "lastName": "dfghdg",
+      "nick": "dfghdfg",
+      "id": 2
+    },
+    {
+      "email": "asdf@sdfgs.pl",
+      "password": "$2a$10$JtOFjDTwnhMuoVu9pIsouuVzGSWWSPZ6aYenfxC4OnfDXh8HRYh2W",
+      "firstName": "asdf",
+      "lastName": "dfa",
+      "nick": "sdfa",
+      "id": 3
+    },
+    {
+      "email": "radnarock@gmail.com",
+      "password": "$2a$10$n3D.diuc1AFd6e9P7bkCIe1unTiGPeL8PxOe3oF2m.yDX7PqhPWFK",
+      "firstName": "Tomasz",
+      "lastName": "asdf",
+      "nick": "sdfasdf",
+      "id": 4
+    },
+    {
+      "email": "asasdfdf@sdfgs.pl",
+      "password": "$2a$10$Bvh/E4zNWB1hvToEqgdFu.zgUWPCltMGCawrSfuUF7YwUHKv2Ap2e",
+      "firstName": "asdfa",
+      "lastName": "asdf",
+      "nick": "asdf",
+      "id": 5
+    },
+    {
+      "email": "fghg@sdfg.pl",
+      "password": "$2a$10$q2x4TMnpI6SE04fFb8u4pemauCVt61qNGEM2xbNendS5nLTl6YSla",
+      "firstName": "sdfg",
+      "lastName": "sdfgs",
+      "nick": "dfgsdfg",
+      "id": 6
+    },
+    {
+      "email": "dfgsdfg@asgas.pl",
+      "password": "$2a$10$5NXA5cqopyI0Sq/c9XC/3Oz07C6RFKgiEQzHlTOzQKbMVjHkpYvzC",
+      "firstName": "dfgsdfgsdf",
+      "lastName": "gsdfgsdf",
+      "nick": "gsdfgs",
+      "id": 7
+    },
+    {
+      "email": "asdfasd@sdfsdf.pl",
+      "password": "$2a$10$lD8yujHMvyvcSjcfd4S2Y.sflTUSqWvQIiwId4MfTAsuFHjgLlTK6",
+      "firstName": "sdfgsdfg",
+      "lastName": "sdfgsdfg",
+      "nick": "sdfgs",
+      "id": 8
+    },
+    {
+      "email": "xhfdhs@sdfgsdf.pl",
+      "password": "$2a$10$26fwpdecsqNsdtL76ReFrOBY7F.H2spqXr44TSfZn7m1LaWCWYiBC",
+      "firstName": "sdfgsdfg",
+      "lastName": "sdfgsdfg",
+      "nick": "sdfgsdfg",
+      "id": 9
+    },
+    {
+      "email": "sdfgsf@asdfasd.pl",
+      "password": "$2a$10$R5SQ8w6PlO7.DtezOnqCPOwg00H9TKnarXjVrX2TPa2AGY4KcQpDu",
+      "firstName": "sdfgsdfg",
+      "lastName": "fgsdfgsdfg",
+      "nick": "sdfgsdfg",
+      "id": 10
+    },
+    {
+      "email": "ssdfgsgfd@asafds.pl",
+      "password": "$2a$10$wlg6NMUl6e54DM9fV1nx1OY7pLqYJV1Rf/vAfpepkyGGcU8exA.US",
+      "firstName": "sdfgsdfg",
+      "lastName": "sdfgsdfg",
+      "nick": "dfgsdfgsfd",
+      "id": 11
+    },
+    {
+      "email": "asdfasdf@asdfasd.pl",
+      "password": "$2a$10$rRTDPGQzLTLUEIToaE9A.u3l9piHmbGrEw7zF7ZdDUz14c7II.Yn6",
+      "firstName": "asdfasdf",
+      "lastName": "asdfasdf",
+      "nick": "asdfasdf",
+      "id": 12
+    },
+    {
+      "email": "1@1.pl",
+      "password": "$2a$10$ifZCGMbrkew5totYIOS7kuzWK5a3m5qMnwGdCbW932Ky4r2t.OkBq",
+      "firstName": "a",
+      "lastName": "a",
+      "nick": "a",
+      "id": 13
+    },
+    {
+      "email": "2@2.pl",
+      "password": "$2a$10$bySdW2xnggFMfmaPVW4y5.25ib9sg5yHNoJA12nVM4wiMWHwsTrnW",
+      "firstName": "dfgsdf",
+      "lastName": "asdfasdf",
+      "nick": "sdfgagdfg",
+      "id": 14
+    }
+  ]
+}

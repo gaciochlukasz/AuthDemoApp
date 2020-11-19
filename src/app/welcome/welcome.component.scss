@@ -1,0 +1,36 @@
+.welcome-page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &_background-image {
+    background-image: url("../../assets/login-background.jpg");
+    background-position: center;
+    position: absolute;
+    background-color: #e4f2f7;
+    width: 100%;
+    height: 100%;
+  }
+
+  &_welcome-panel {
+    position: relative;
+    margin-left: 10%;
+    width: 400px;
+    padding: 20px 0;
+    background-color: white;
+    border-radius: 10px;
+    border-color: gray;
+    box-shadow: rgba(gray, 0.7) 0px 0px 5px 5px;
+    text-align: center;
+  }
+
+  @media (max-width: 640px) {
+    justify-content: center;
+    &_welcome-panel {
+      margin: 0 20px;
+    }
+  }
+}

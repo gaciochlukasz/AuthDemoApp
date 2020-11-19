@@ -10,3 +10,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-form-field-label {
     font-size: 16px !important;
 }
+
+// snack-bar
+
+.success-snackbar-info {
+    background-color: #78ca79;
+}
+
+.error-snackbar-info {
+    background-color: #e25959;
+}
