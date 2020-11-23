@@ -7,6 +7,22 @@
       "lastName": "Kowalski",
       "nick": "kowal",
       "id": 1
+    },
+    {
+      "email": "1@1.pl",
+      "password": "$2a$10$rs4lrb.EseEdqKM.iDvUeeLaISXKLcpwz/GilOdywJUfyhErC3Yuq",
+      "firstName": "1q",
+      "lastName": "1q",
+      "nick": "1q",
+      "id": 2
+    },
+    {
+      "email": "jan.zaremba@gmail.com",
+      "password": "$2a$10$ztL0VHip.FX8RaXQay7FGublH5FMZcJeX72DkeDOPmrR2QfNtvVnm",
+      "firstName": "Janek",
+      "lastName": "Zaremba",
+      "nick": "jan.zaremba",
+      "id": 3
     }
   ]
 }

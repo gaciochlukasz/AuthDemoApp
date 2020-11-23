@@ -1,4 +1,6 @@
-<h1>Sign-In</h1>
+<div class="welcome-page_welcome-panel_header">
+  <h1>Sign-In</h1>
+</div>
 <form [formGroup]="form">
   <mat-form-field class="welcome-page_welcome-panel_input">
     <mat-label>Email</mat-label>
@@ -17,7 +19,7 @@
   </mat-form-field>
 
   <button
-    class="welcome-page_welcome-panel_button"
+    class="welcome-page_welcome-panel_button welcome-page_welcome-panel_button_login"
     mat-raised-button
     color="primary"
     (click)="login()"
@@ -26,7 +28,7 @@
   </button>
 
   <button
-    class="welcome-page_welcome-panel_button"
+    class="welcome-page_welcome-panel_button welcome-page_welcome-panel_button_register"
     mat-raised-button
     (click)="register()"
   >
