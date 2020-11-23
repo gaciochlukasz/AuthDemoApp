@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
 
+## Development server and Running json-server-auth
+
+Run `npm run start` to open dev server and the json-server-auth server. Default port is 3000 for json-server-auth and 4200 for angular application.
+## Running end-to-end tests and json-server-auth
+
+Run `npm run e2e` to execute the end-to-end tests with opened json-server-auth server.
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

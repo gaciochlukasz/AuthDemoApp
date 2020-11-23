@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { HelperService } from 'src/app/services/helper.service';
 import { LoginState } from './state/auth/auth.reducer';
-import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
 import { AuthActionsType } from './state/auth/auth.actions';
 
@@ -12,7 +11,6 @@ import { AuthActionsType } from './state/auth/auth.actions';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  title = 'auth-demo-app';
   loader: boolean;
 
   constructor(

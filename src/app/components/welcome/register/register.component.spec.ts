@@ -1,5 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { FormBuilder } from '@angular/forms';
+import { provideMockStore } from '@ngrx/store/testing';
+import { initialState } from '../../../mocks/test.mocks';
 import { RegisterComponent } from './register.component';
 
 describe('RegisterComponent', () => {
@@ -8,9 +10,9 @@ describe('RegisterComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RegisterComponent ]
-    })
-    .compileComponents();
+      declarations: [RegisterComponent],
+      providers: [FormBuilder, provideMockStore({ initialState })],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

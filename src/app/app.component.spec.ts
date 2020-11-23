@@ -1,15 +1,33 @@
+import { Overlay } from '@angular/cdk/overlay';
 import { TestBed, async } from '@angular/core/testing';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { RouterTestingModule } from '@angular/router/testing';
+import { provideMockStore, MockStore } from '@ngrx/store/testing';
 import { AppComponent } from './app.component';
+import { AuthService } from './services/auth.service';
+import { HelperService } from './services/helper.service';
+import { HttpClient, HttpHandler } from '@angular/common/http';
 
 describe('AppComponent', () => {
+  const initialState = {
+    accessToken: '',
+    userId: null,
+    errorMessage: '',
+    logout: false,
+  };
+
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
+      imports: [RouterTestingModule],
+      declarations: [AppComponent],
+      providers: [
+        HelperService,
+        MatSnackBar,
+        Overlay,
+        provideMockStore({ initialState }),
+        AuthService,
+        HttpClient,
+        HttpHandler
       ],
     }).compileComponents();
   }));
@@ -18,18 +36,5 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
-  });
-
-  it(`should have as title 'auth-demo-app'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('auth-demo-app');
-  });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('auth-demo-app app is running!');
   });
 });
