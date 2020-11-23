@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Store } from '@ngrx/store';
 import { AuthService } from 'src/app/services/auth.service';
-import { HelperService } from 'src/app/services/helper.service';
-import { RegisterModel } from './../../models/register.model';
+import { AuthActionsType } from 'src/app/state/auth/auth.actions';
+import { RegisterModel } from './../../../models/register.model';
 
 @Component({
   selector: 'ath-register',
@@ -15,9 +15,7 @@ export class RegisterComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    private router: Router,
-    private authService: AuthService,
-    private helperService: HelperService
+    private storage: Store<any>
   ) {}
 
   ngOnInit() {
@@ -38,6 +36,6 @@ export class RegisterComponent implements OnInit {
     if (!this.form.valid) {
       return;
     }
-    this.authService.register(this.form.value as RegisterModel);
+    this.storage.dispatch({type: AuthActionsType.REGISTER, register: this.form.value});
   }
 }

@@ -3,5 +3,5 @@ export interface RegisterModel {
     lastName: string;
     nick: string;
     email: string;
-    password: string;
+    password?: string;
 }

@@ -1,23 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { UserModel } from 'src/app/models/user.model';
-import { AuthService } from 'src/app/services/auth.service';
-import { HelperService } from 'src/app/services/helper.service';
+import { Store } from '@ngrx/store';
+import { AuthActionsType } from 'src/app/state/auth/auth.actions';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'ath-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
   public form: FormGroup;
+  auth$: Subscription;
 
   constructor(
     private formBuilder: FormBuilder,
     private router: Router,
-    private authService: AuthService,
-    private helperService: HelperService
+    private store: Store<any>
   ) {}
 
   ngOnInit() {
@@ -36,7 +36,10 @@ export class LoginComponent implements OnInit {
       return;
     }
 
-    this.authService.login(this.form.value);
+    this.store.dispatch({
+      type: AuthActionsType.LOGIN,
+      credentials: this.form.value
+    });
   }
 
   register() {
