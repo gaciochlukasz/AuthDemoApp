@@ -1,12 +1,34 @@
 <div class="dashboard-panel">
   <div class="dashboard-panel_user-data">
-    <button
-    class="welcome-page_welcome-panel_button"
-    mat-raised-button
-    color="primary"
-    (click)="logout()"
-  >
-    Logout
-  </button>
+    <div class="dashboard-panel_user-data_header">
+      <h2>Logged user:</h2>
+    </div>
+    <div class="dashboard-panel_user-data_content">
+      <span
+        >Id: <b>{{ user.id }}</b></span
+      >
+      <span
+        >First name: <b>{{ user.firstName }}</b></span
+      >
+      <span
+        >Last name: <b>{{ user.lastName }}</b></span
+      >
+      <span
+        >Nick: <b>{{ user.nick }}</b></span
+      >
+      <span
+        >Email: <b>{{ user.email }}</b></span
+      >
+    </div>
+    <div class="dashboard-panel_user-data_actions">
+      <button
+        class="dashboard-panel_user-data_actions_logout-button"
+        mat-raised-button
+        color="primary"
+        (click)="logout()"
+      >
+        Logout
+      </button>
+    </div>
   </div>
 </div>

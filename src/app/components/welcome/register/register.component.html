@@ -28,6 +28,9 @@
     <mat-form-field class="welcome-page_welcome-panel_input">
       <mat-label>Nick</mat-label>
       <input type="text" matInput formControlName="nick" />
+      <mat-error *ngIf="form.get('nick').hasError('required')">
+        Nick is <strong>required</strong>
+      </mat-error>
     </mat-form-field>
 
     <mat-form-field class="welcome-page_welcome-panel_input">

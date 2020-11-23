@@ -1,0 +1,28 @@
+.dashboard-panel {
+  display: flex;
+  justify-content: center;
+  &_user-data {
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    margin: 20px;
+    width: 30%;
+    border: 1px solid gray;
+    border-radius: 10px;
+
+    &_header {
+      text-align: center;
+      border-bottom: 1px solid gray;
+    }
+
+    &_content {
+      padding: 20px 10px 20px 20%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &_actions {
+      border-top: 1px solid gray;
+      padding: 10px;
+      text-align: center;
+    }
+  }
+}

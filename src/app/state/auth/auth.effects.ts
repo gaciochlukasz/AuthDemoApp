@@ -36,8 +36,7 @@ export class AuthEffects {
             })
           );
         })
-      ),
-    { useEffectsErrorHandler: false }
+      )
   );
 
   loginSuccess$ = createEffect(
@@ -75,8 +74,7 @@ export class AuthEffects {
             })
           );
         })
-      ),
-      { useEffectsErrorHandler: false }
+      )
   );
 
   logout$ = createEffect(

@@ -8,11 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
 @NgModule({
-  imports: [
-  CommonModule,
-    ShareModule,
-    WelcomeRoutingModule
-  ],
+  imports: [CommonModule, ShareModule, WelcomeRoutingModule],
   declarations: [WelcomeComponent, LoginComponent, RegisterComponent],
 })
 export class WelcomeModule {}
